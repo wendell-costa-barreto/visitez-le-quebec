@@ -1,0 +1,21 @@
+.btn-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    font-family: "RobotoCondensed";
+    font-size: 1.2rem;
+    background-color: #6047d1aa;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+    margin-top: 2%;
+}
+
+.btn-hero:hover {
+    background-color: #3b2b7c;
+    color: #fff;
+}

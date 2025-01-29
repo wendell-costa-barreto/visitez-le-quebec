@@ -1,0 +1,86 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.slider {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider .title {
+    color: #000;
+    font-size: 2.4rem;
+    margin-top: 20px;
+    font-family: "OstiaAntica";
+}
+
+.slider-title {
+    margin-left: 10%;
+}
+
+.knowmore {
+    font-size: 1.3em;
+    font-family: "RobotoCondensed";
+}
+
+.slider img {
+    width: 600px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.slider-images p {
+    margin-top: 5px;
+    color: #000;
+    font-size: 2rem;
+    margin-left: 20px;
+    font-family: "RobotoCondensed";
+}
+
+.slider-images {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.prev-btn,
+.next-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #000000af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.hiver-title {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding: 5% 10% 0 10%;
+}
+
+.hiver-title h1 {
+    font-size: 2.5em;
+    font-family: 'OstiaAntica';
+}
+
+.hiver-title p {
+    font-size: 1.2em;
+}
