@@ -9,6 +9,6 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/visitez-le-quebec/',
+  base: '/visitez-le-quebec',
 })
 
