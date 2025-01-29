@@ -9,6 +9,6 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/your-repository-name/',
+  base: '/visitez-le-quebec/',
 })
 
