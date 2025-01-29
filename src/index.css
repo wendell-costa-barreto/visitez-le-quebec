@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: "Horizon";
-  src: url('horizon.otf');
+  src: url("${import.meta.env.BASE_URL}horizon.otf");
 }
 
 @font-face {
   font-family: "RobotoCondensed";
-  src: url('Roboto-Condensed.ttf');
+  src: url("${import.meta.env.BASE_URL}Roboto-Condensed.ttf");
 }
 
 @font-face {
   font-family: "OstiaAntica";
-  src: url("OstiaAnticaWEB-Regular.ttf");
+  src: url("${import.meta.env.BASE_URL}OstiaAnticaWEB-Regular.ttf");
 }
 
 body {
