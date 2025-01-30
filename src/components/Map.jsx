@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
 import "@maptiler/sdk/dist/maptiler-sdk.css";
-import './map.css';
+import './Map.css';
 
 // Set your Maptiler API key
 maptilersdk.config.apiKey = '196NRrAl6ge8XCjgxs6s';
