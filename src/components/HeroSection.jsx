@@ -28,7 +28,9 @@ export default function HeroSection({ isVideo, isImg, videoSrc, imgSrc, h1Text, 
                         loop
                         muted
                         className="video-background"
-                    />
+                    >
+                        <source src={videoSrc} type="video/mp4" />
+                    </video>
                 )}
                 {isImg && (
                     <img
