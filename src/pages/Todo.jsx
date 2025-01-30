@@ -4,7 +4,7 @@ import HorizontalSlider from "../components/HorizontalSlider";
 import Footer from "../components/Footer";
 import { OutdoorActivities, WinterActivities, TourismImg, ApresSki } from "../utils/ImportImages";
 import "./Todo.css"
-import quoiFaire from '/quoiFaire.mp4'
+import quoiFaire from '/dist/quoiFaire.mp4'
 
 export default function Todo() {
 

@@ -5,7 +5,7 @@ import Map from '../components/Map';
 import SectionCard from '../components/SectionCard';;
 import { DestinationImages } from '../utils/ImportImages';
 import Footer from "../components/Footer";
-import quebecDestination from '/quebecDestination.mp4'
+import quebecDestination from '/dist/quebecDestination.mp4'
 export default function Destinations() {
 
     useEffect(() => {

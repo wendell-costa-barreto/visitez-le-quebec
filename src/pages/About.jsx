@@ -7,7 +7,7 @@ import Article from "../components/Article";
 import poutine from '../assets/poutine.jpg'
 import carnavalDeQuebec from '../assets/carnavalDeQuebec.jpg'
 import './About.css'
-import quebecAboutVideo from '/quebecAboutVideo.mp4'
+import quebecAboutVideo from '/dist/quebecAboutVideo.mp4'
 
 export default function About() {
     useEffect(() => {

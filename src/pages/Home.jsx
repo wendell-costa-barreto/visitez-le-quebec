@@ -9,7 +9,7 @@ import VerticalSlider from "../components/VerticalSlider";
 import { useEffect } from "react";
 import Article from "../components/Article";
 import fronteNacImg from "../assets/frontenacArticleImg.jpg";
-import quebec from "/quebec.mp4";
+import quebec from "/dist/quebec.mp4";
 
 export default function Home() {
 
