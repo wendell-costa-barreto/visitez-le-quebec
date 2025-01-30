@@ -9,6 +9,7 @@ import VerticalSlider from "../components/VerticalSlider";
 import { useEffect } from "react";
 import Article from "../components/Article";
 import fronteNacImg from "../assets/frontenacArticleImg.jpg";
+import quebec from "/quebec.mp4";
 
 export default function Home() {
 
@@ -18,7 +19,7 @@ export default function Home() {
 
     return (
         <>
-            <HeroSection isVideo={true} videoSrc='/quebec.mp4' isImg={false} imgSrc='' h1Text="Découvrez le cœur du Canada français" h3Text="Vivez la magie du Québec" isButton={true} buttonText="Découvrir" />
+            <HeroSection isVideo={true} videoSrc={quebec} isImg={false} imgSrc='' h1Text="Découvrez le cœur du Canada français" h3Text="Vivez la magie du Québec" isButton={true} buttonText="Découvrir" />
             <main className="main">
                 <div className="top-destinations-main">
                     <div className="top-destinations-wrapper">

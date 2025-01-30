@@ -7,6 +7,7 @@ import Article from "../components/Article";
 import poutine from '../assets/poutine.jpg'
 import carnavalDeQuebec from '../assets/carnavalDeQuebec.jpg'
 import './About.css'
+import quebecAboutVideo from '/quebecAboutVideo.mp4'
 
 export default function About() {
     useEffect(() => {
@@ -18,7 +19,7 @@ export default function About() {
             <HeroSection
                 isVideo={true}
                 isImg={false}
-                videoSrc='quebecAboutVideo.mp4'
+                videoSrc={quebecAboutVideo}
                 imgSrc=''
                 h1Text="À propos de Quebec"
                 h3Text="de la merveilleuse province de Québec"

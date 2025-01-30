@@ -4,6 +4,7 @@ import HorizontalSlider from "../components/HorizontalSlider";
 import Footer from "../components/Footer";
 import { OutdoorActivities, WinterActivities, TourismImg, ApresSki } from "../utils/ImportImages";
 import "./Todo.css"
+import quoiFaire from '/quoiFaire.mp4'
 
 export default function Todo() {
 
@@ -15,7 +16,7 @@ export default function Todo() {
             <HeroSection
                 isVideo={true}
                 isImg={false}
-                videoSrc='quoiFaire.mp4'
+                videoSrc={quoiFaire}
                 imgSrc=''
                 h1Text="Quoi Faire"
                 h3Text="Jetez un œil à ce que vous pouvez faire au Québec"
