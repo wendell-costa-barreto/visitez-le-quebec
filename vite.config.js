@@ -10,6 +10,5 @@ export default defineConfig({
     },
   },
   publicDir: "public",
-  base: '/visitez-le-quebec',
 })
 

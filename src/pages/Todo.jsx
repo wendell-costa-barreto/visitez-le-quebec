@@ -16,7 +16,7 @@ export default function Todo() {
             <HeroSection
                 isVideo={true}
                 isImg={false}
-                videoSrc="/quoiFaire.mp4"
+                videoSrc="quoiFaire.mp4"
                 imgSrc=''
                 h1Text="Quoi Faire"
                 h3Text="Jetez un œil à ce que vous pouvez faire au Québec"
