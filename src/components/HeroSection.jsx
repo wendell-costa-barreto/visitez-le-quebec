@@ -23,7 +23,6 @@ export default function HeroSection({ isVideo, isImg, videoSrc, imgSrc, h1Text, 
             >
                 {isVideo && (
                     <video
-
                         autoPlay
                         loop
                         muted

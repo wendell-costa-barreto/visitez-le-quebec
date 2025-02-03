@@ -5,6 +5,9 @@ import Map from '../components/Map';
 import SectionCard from '../components/SectionCard';;
 import { DestinationImages } from '../utils/ImportImages';
 import Footer from "../components/Footer";
+import { FallbackImages } from "../utils/ImportImages";
+
+
 export default function Destinations() {
 
     useEffect(() => {
@@ -14,9 +17,9 @@ export default function Destinations() {
         <>
             <HeroSection
                 isVideo={true}
-                isImg={false}
+                isImg={true}
                 videoSrc="/quebecDestination.mp4"
-                imgSrc=''
+                imgSrc={FallbackImages[2].img}
                 h1Text="Destinations"
                 h3Text="Venez visiter les villes du Canada"
                 isButton={true}

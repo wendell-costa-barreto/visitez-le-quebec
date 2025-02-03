@@ -139,3 +139,15 @@ export const DestinationImages = [
     { id: 4, name: "Gatineau Destinations", img: gatineauDestinations },
     { id: 5, name: "Charlottetown Destinations", img: charlottetownDestinations }
 ]
+
+import homePageFallback from '../assets/fallBackImages/homePageFallback.jpg';
+import aboutPageFallback from '../assets/fallBackImages/aboutPageFallback.jpg';
+import destinationsPageFallback from '../assets/fallBackImages/destinationsPageFallback.jpg';
+import quoifairePageFallback from '../assets/fallBackImages/quoifairePageFallback.webp';
+
+export const FallbackImages = [
+    { id: 1, name: "Home Page Fallback", img: homePageFallback },
+    { id: 2, name: "About Page Fallback", img: aboutPageFallback },
+    { id: 3, name: "Destination Page Fallback", img: destinationsPageFallback },
+    { id: 4, name: "Quoi Faire Page Fallback", img: quoifairePageFallback }
+]

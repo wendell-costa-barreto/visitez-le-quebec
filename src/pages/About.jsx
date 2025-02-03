@@ -7,7 +7,7 @@ import Article from "../components/Article";
 import poutine from '../assets/poutine.jpg'
 import carnavalDeQuebec from '../assets/carnavalDeQuebec.jpg'
 import './About.css'
-
+import { FallbackImages } from "../utils/ImportImages";
 export default function About() {
     useEffect(() => {
         document.title = "A propos de Québec";
@@ -17,9 +17,9 @@ export default function About() {
         <>
             <HeroSection
                 isVideo={true}
-                isImg={false}
+                isImg={true}
                 videoSrc='/quebecAboutVideo.mp4'
-                imgSrc=''
+                imgSrc={FallbackImages[1].img}
                 h1Text="À propos de Quebec"
                 h3Text="de la merveilleuse province de Québec"
                 isButton={true}

@@ -9,6 +9,7 @@ import VerticalSlider from "../components/VerticalSlider";
 import { useEffect } from "react";
 import Article from "../components/Article";
 import fronteNacImg from "../assets/frontenacArticleImg.jpg";
+import { FallbackImages } from "../utils/ImportImages";
 
 export default function Home() {
 
@@ -18,7 +19,16 @@ export default function Home() {
 
     return (
         <>
-            <HeroSection isVideo={true} videoSrc='/videos/quebec.mp4' isImg={false} imgSrc='' h1Text="Découvrez le cœur du Canada français" h3Text="Vivez la magie du Québec" isButton={true} buttonText="Découvrir" />
+            <HeroSection
+                isVideo={false}
+                videoSrc='/videos/quebec.mp4'
+                isImg={true}
+                imgSrc={FallbackImages[0].img}
+                h1Text="Découvrez le cœur du Canada français"
+                h3Text="Vivez la magie du Québec"
+                isButton={true}
+                buttonText="Découvrir"
+            />
             <main className="main">
                 <div className="top-destinations-main">
                     <div className="top-destinations-wrapper">
@@ -44,13 +54,13 @@ export default function Home() {
                 img={HomeImages[0]}
             ></SectionCard >
             <SectionCard
-                title="Vivez les merveilles naturelles du Québec"
+                title="Savourez les saveurs du Québec"
                 paragraph="Des sommets majestueux du Mont-Tremblant aux eaux scintillantes du Fjord du Saguenay, le Québec regorge de paysages à couper le souffle. Que vous soyez amateur de randonnée, de kayak ou de ski dans les Laurentides, chaque saison offre une nouvelle façon de profiter de la nature québécoise. Échappez au quotidien et plongez dans la beauté sauvage du Québec."
                 buttonText="Planifiez votre aventure"
                 isInverted={true}
                 img={HomeImages[1]}
             ></SectionCard><SectionCard
-                title=" Savourez les saveurs du Québec"
+                title="Vivez les merveilles naturelles du Québec"
                 paragraph="Partez à la découverte des délices culinaires du Québec ! Dégustez des classiques comme la poutine, la tourtière ou les sucreries à base de sirop d’érable. Explorez les marchés fermiers locaux, participez à des circuits gastronomiques et laissez-vous surprendre par les restaurants emblématiques de Montréal et de Québec. Une expérience gourmande à ne pas manquer !"
                 buttonText="Découvrez la cuisine locale"
                 isInverted={false}
