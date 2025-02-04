@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Article from "../components/Article";
 import fronteNacImg from "../assets/frontenacArticleImg.jpg";
 import { FallbackImages } from "../utils/ImportImages";
+import video from '../../public/videos/quebec.mp4';
 
 export default function Home() {
 
@@ -21,7 +22,7 @@ export default function Home() {
         <>
             <HeroSection
                 isVideo={true}
-                videoSrc='../public/videos/quebec.mp4'
+                videoSrc={video}
                 isImg={false}
                 imgSrc={FallbackImages[0].img}
                 h1Text="Découvrez le cœur du Canada français"
