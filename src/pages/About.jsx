@@ -30,7 +30,7 @@ export default function About() {
 
             <div className="collumns-container">
                 <div className="column-left">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <h1>Une fascinante histoire</h1>
                     <p>
                         La province de Québec, la plus grande du Canada, se distingue par son riche patrimoine culturel, son histoire fascinante et ses paysages à couper le souffle. Berceau de la culture francophone en Amérique du Nord, elle allie tradition et modernité à travers ses villes dynamiques comme Montréal et Québec, où l’architecture historique côtoie une scène artistique florissante. En hiver, la province se transforme en un paradis pour les amateurs de sports de glisse avec des stations de ski renommées et le célèbre Carnaval de Québec, tandis qu’en été, ses vastes forêts, ses lacs scintillants et le majestueux fleuve Saint-Laurent offrent des possibilités infinies pour la randonnée, le kayak et l'observation de la faune. Riche en gastronomie, elle est aussi réputée pour son sirop d’érable, sa poutine et ses fromages artisanaux. Que ce soit pour ses festivals animés, ses espaces naturels impressionnants ou son accueil chaleureux, le Québec séduit autant les voyageurs que ceux qui y habitent.</p>                </div>
                 <div className="column-right">

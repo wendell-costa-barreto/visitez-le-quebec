@@ -20,9 +20,9 @@ export default function Home() {
     return (
         <>
             <HeroSection
-                isVideo={false}
+                isVideo={true}
                 videoSrc='/videos/quebec.mp4'
-                isImg={true}
+                isImg={false}
                 imgSrc={FallbackImages[0].img}
                 h1Text="Découvrez le cœur du Canada français"
                 h3Text="Vivez la magie du Québec"
