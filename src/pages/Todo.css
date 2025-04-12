@@ -4,6 +4,11 @@
     text-align: center;
 }
 
+.text-activité {
+    font-size: 1.3rem;
+    width: 90%;
+}
+
 .title-activité-wrapper {
     display: flex;
     flex-direction: column;

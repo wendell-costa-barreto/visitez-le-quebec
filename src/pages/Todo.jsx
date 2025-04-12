@@ -1,80 +1,66 @@
 import HeroSection from "../components/HeroSection";
 import { useEffect } from "react";
-import './Destinations.css'
-import Map from '../components/Map';
-import SectionCard from '../components/SectionCard';;
-import { DestinationImages } from '../utils/ImportImages';
+import HorizontalSlider from "../components/HorizontalSlider";
 import Footer from "../components/Footer";
+import { OutdoorActivities, WinterActivities, TourismImg, ApresSki } from "../utils/ImportImages";
+import "./Todo.css"
 import { FallbackImages } from "../utils/ImportImages";
 
-
-export default function Destinations() {
+export default function Todo() {
 
     useEffect(() => {
-        document.title = "Visitez le Québec | Destinations";
+        document.title = "Visitez le Québec | Quoi Faire";
     }, []);
     return (
         <>
             <HeroSection
                 isVideo={true}
                 isImg={true}
-                videoSrc="/quebecDestination.mp4"
-                imgSrc={FallbackImages[2].img}
-                h1Text="Destinations"
-                h3Text="Venez visiter les villes du Canada"
+                videoSrc="quoiFaire.mp4"
+                imgSrc={FallbackImages[3].img}
+                h1Text="Quoi Faire"
+                h3Text="Jetez un œil à ce que vous pouvez faire au Québec"
                 isButton={true}
                 buttonText="Découvrir"
             ></HeroSection>
-            <div className="title-wrapper-top-destinations">
-                <h1 className="title-top-destinations">Top Destinations en Québec</h1>
-                <p>Planifiez votre séjour en choisissant votre destination parmi nos régions touristiques. Chacune d’elles présente un relief, une histoire et des activités qui mettent en valeur la particularité de notre territoire.</p>
+            <div className="title-activité-wrapper">
+                <h1 className="title-activité">Activité Hivernales</h1>
+                <p className="text-activité">
+                    Découvrez les activités hivernales passionnantes que le Québec a à offrir. Profitez de l'expérience unique du traîneau à chiens à travers les paysages enneigés, essayez la pêche sur glace sur les lacs gelés, et vivez l'excitation du patinage sur les célèbres patinoires. Pour les amateurs de sensations fortes, le ski et la luge dans les montagnes du Québec vous attendent. Rejoignez-nous pour une aventure hivernale inoubliable!
+                </p>
             </div>
-            <Map></Map>
+            <HorizontalSlider images={WinterActivities} />
+            <div className="title-activité-wrapper">
+                <h1 className="title-activité">Activités de plein air</h1>
+                <p>
+                    Explorez les activités de plein air captivantes offertes par le Québec. Partez à l'aventure en kayak sur les rivières sinueuses, découvrez les paysages à vélo, ou promenez-vous à cheval à travers la nature sauvage. La randonnée dans les parcs nationaux vous offre des vues imprenables, tandis que l'observation des baleines le long des côtes vous laissera des souvenirs impérissables. Vivez des expériences en plein air inoubliables!
+                </p>
+            </div>
+            <HorizontalSlider images={OutdoorActivities} />
+            <div className="title-activité-wrapper">
+                <h1 className="title-activité">Attractions touristiques</h1>
+                <p>Découvrez les nombreuses attractions touristiques que le Québec a à offrir. Du célèbre Château Frontenac à la Basilique Notre-Dame, en passant par les magnifiques paysages de la Gaspésie, il y a quelque chose pour tous les goûts. Partez à l'aventure et explorez les sites historiques, les musées, les parcs nationaux et bien plus encore!</p>
+            </div>
+            <HorizontalSlider images={TourismImg} />
 
-            <h1 className="title-top-destinations">Régions les plus populaires</h1>
-
-            <SectionCard
-                title="Québec"
-                paragraph="Québec, ville historique et capitale du Québec, vous invite &agrave; d&eacute;couvrir son riche patrimoine culturel et architectural. La ville fortifi&eacute;e de l'Uni&eacute;sco, les rues pi&eacute;tonnes du Vieux-Qu&eacute;bec, les festivals et les &eacute;v&eacute;nements, les restaurants et les bars, les march&eacute;s et les boutiques, tout concourt &agrave; faire de Qu&eacute;bec une destination incontournable."
-                buttonText="En découvrir plus"
-                isInverted={false}
-                img={DestinationImages[0].img}
-            ></SectionCard>
-
-            <SectionCard
-                title="Montréal"
-                paragraph="Montr&eacute;al, ville cosmopolite et centre &eacute;conomique du Qu&eacute;bec, vous offre une grande vari&eacute;t&eacute; d'exp&eacute;riences : festivals, mus&eacute;es, restaurants, bars, march&eacute;s, et bien plus encore. La riche histoire de la ville, ses nombreux parcs et jardins, ainsi que sa culture multiculturelle, en font une destination tr&egrave;s attractive."
-                buttonText="En découvrir plus"
-                isInverted={false}
-                img={DestinationImages[1].img}
-            ></SectionCard>
-
-
-            <SectionCard
-                title="Saguenay-Lac-Saint-Jean"
-                paragraph="La r&eacute;gion de Saguenay-Lac-Saint-Jean vous invite &agrave; d&eacute;couvrir ses nombreux attraits touristiques : le lac Saint-Jean, les montagnes, les for&ecirc;ts, les rivi&egrave;res, les chutes, les parcs, les sentiers, les plages, les stations de ski, les festivals, les &eacute;v&eacute;nements, les restaurants, les bars, les march&eacute;s, les boutiques, etc. Vous y trouverez &eacute;galement de nombreux sites historiques et culturels, tels que le mus&eacute;e de la Civilisation, la basilique-cath&eacute;drale Notre-Dame de Qu&eacute;bec, le fortifications de Qu&eacute;bec, etc."
-                buttonText="En découvrir plus"
-                isInverted={false}
-                img={DestinationImages[2].img}
-            ></SectionCard>
-
-
-            <SectionCard
-                title="Gatineau"
-                paragraph="Gatineau est une ville dynamique du Québec, située sur la rive nord de la rivière des Outaouais, en face d'Ottawa. Mélange harmonieux de nature et d’urbanisme, elle offre de vastes espaces verts, comme le parc de la Gatineau, idéal pour la randonnée et les activités en plein air. Riche en culture, elle abrite le Musée canadien de l’histoire, l’un des plus visités du pays. Son économie diversifiée, son marché du travail en pleine croissance et sa proximité avec la capitale en font un lieu prisé pour les résidents et les visiteurs."
-                buttonText="En découvrir plus"
-                isInverted={false}
-                img={DestinationImages[3].img}
-            ></SectionCard>
-
-
-            <SectionCard
-                title="Charlottetown"
-                paragraph="Charlottetown est la capitale de l'Île-du-Prince-Édouard, une province canadienne connue pour sa beauté naturelle et son riche patrimoine historique. La ville est célèbre pour son charme victorien, ses rues sinueuses et ses nombreux sites historiques, tels que la Province House, où a eu lieu la Confédération canadienne en 1864."
-                buttonText="En découvrir plus"
-                isInverted={false}
-                img={DestinationImages[4].img}
-            ></SectionCard>
+            <div className="gallery">
+                <h1 className="title-activité gallery-title">Aprés-Ski</h1>
+                <p>Et pour couronner le tout, profitez de l'ambiance festive et chaleureuse de l'apres-ski au Québec. Les bars et les restaurants vous accueillent avec plaisir pour vous faire découvrir les spécialités locales. Il y a même des festivals de l'apres-ski qui vous attendent!</p>
+                <div className="row">
+                    <div className="column">
+                        <img src={ApresSki[0].img} alt="ApresSki" />
+                        <img src={ApresSki[1].img} alt="ApresSki" />
+                    </div>
+                    <div className="column">
+                        <img src={ApresSki[3].img} alt="ApresSki" />
+                        <img src={ApresSki[4].img} alt="ApresSki" />
+                    </div>
+                    <div className="column">
+                        <img src={ApresSki[5].img} alt="ApresSki" />
+                        <img src={ApresSki[6].img} alt="ApresSki" />
+                    </div>
+                </div>
+            </div>
             <Footer></Footer>
         </>
     )
