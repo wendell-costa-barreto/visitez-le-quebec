@@ -1,0 +1,16 @@
+.title-top-destinations {
+    font-family: "OstiaAntica";
+    font-size: 4rem;
+    text-align: center;
+}
+
+.title-wrapper-top-destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7% 0;
+}
+
+.title-wrapper-top-destinations p {
+    font-size: 1.3rem
+}

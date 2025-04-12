@@ -1,0 +1,55 @@
+.map-wrap {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 77px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    width: 100%;
+    height: 75%;
+    transition: all 0.5s ease-in-out;
+}
+
+.info {
+    border: 1px solid black;
+    width: 40%;
+    height: 80%;
+}
+
+.info img {
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    object-fit: cover;
+}
+
+.info h1 {
+    text-align: left;
+    font-size: 1.4rem;
+    font-family: "OstiaAntica";
+    width: 100vw;
+    background-color: rgb(86, 86, 190);
+    padding: 10px 10px 10px 10px;
+    color: #FFF;
+}
+
+.info p {
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: "RobotoCondensed";
+}
+
+.info ul li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 1rem;
+    font-family: "RobotoCondensed";
+}
+
+.info ul li,
+p {
+    margin: 10px 0 0 10px;
+    font-size: 1.2rem;
+}

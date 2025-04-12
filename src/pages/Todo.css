@@ -1,0 +1,53 @@
+.title-activité {
+    font-size: 3rem;
+    font-family: "OstiaAntica";
+    text-align: center;
+}
+
+.title-activité-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4% 0 2% 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.gallery-title {
+    margin: 4% 0 1% 0;
+}
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.gallery p {
+    font-size: 1.3rem;
+    margin-bottom: 2%;
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+.navbar {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: transparent;
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+
+.navbar .logo {
+    font-size: 24px;
+    margin: 0;
+    font-family: "Horizon";
+    cursor: pointer;
+}
+
+.navbar-li {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-li li {
+    margin: 0 15px;
+    white-space: nowrap;
+    font-family: "RobotoCondensed";
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-li li:hover {
+    color: #769ee4;
+}
+
+.images-wrapper {
+    display: flex;
+}
